@@ -669,7 +669,7 @@ imgLogoIcon {
 .raised.homeLibraryButton {
   width: 300%;   /* 3x wider */
   height: 200%;  /* 2x taller */
-  padding: 2em 3em;  /* more padding to increase size */
+  padding: 1em 6em;  /* more padding to increase size */
   font-size: 1.4em;  /* make text bigger */
 }
 
@@ -679,13 +679,14 @@ imgLogoIcon {
 }
 
 /* Center the buttons inside the container */
-.itemsContainer {
+.section0 .verticalSection .itemsContainer:first-of-type {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2em;  /* space between buttons */
-  flex-wrap: wrap; /* allow wrapping if needed */
+  gap: 2em;
+  flex-wrap: wrap;
 }
+
 
 .emby-tab-button:hover::after {
   background: unset !important;
@@ -2130,8 +2131,11 @@ fieldset {
   margin-right: 0.14em;
 }
 #homeTab .homeLibraryButton {
+  border: 2px solid #212121;
+  backdrop-filter: blur(6px);
   background: rgba(var(--accent), 0.4) !important;
 }
+
 #homeTab .homeLibraryButton:hover {
   background: rgba(var(--accent), 0.6) !important;
   color: rgba(var(--darkest), 1) !important;
