@@ -74,6 +74,61 @@ h4 {
   width: 0.25em;
   display: inline-block;
 }
+
+/* My Media (small) */
+#indexPage .raised {
+	background: #000000d9;
+	border: 2px solid white;
+	border-radius: 0.5em;
+}
+
+.layout-desktop #indexPage .raised:hover {
+	background: #a002029e;
+	border: 2px solid white;
+	border-radius: 0.5em;
+	color: white;
+}
+
+.layout-desktop #indexPage .homeLibraryButton {
+	min-width: 13.65em;
+	margin-top: 0.5em !important;
+	margin-right: 1.46em !important;
+	margin-bottom: 0.5em !important;
+	margin-left: 0.5em !important;
+}
+
+.layout-desktop .verticalSection.section0.emby-scroller-container .emby-scrollbuttons.padded-right {
+	top: -3em !important;
+}
+
+.layout-desktop #indexPage .card.overflowBackdropCard.card-hoverable.card-withuserdata,
+.card.overflowSquareCard.card-hoverable {
+	width: 15.6em;
+}
+
+.layout-desktop #homeTab .homeLibraryText {
+	font-family: inherit;
+	font-size: 1.1em;
+	font-weight: 700 !important;
+	text-transform: uppercase;
+	font-family: "Cantarell";
+}
+
+.layout-desktop #homeTab .raised.homeLibraryButton.emby-button {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin-left: 0.25em !important;
+	margin-right: 1.20666em !important;
+	min-width: 14.15em !important;
+}
+
+.layout-desktop #homeTab .homeLibraryIcon {
+	display: none;
+}
+
 #indexPage .sectionTitle::after {
   background: #fff;
   content: "";
